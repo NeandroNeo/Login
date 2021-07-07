@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head style="margin: 10px 0px 0px 10px;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="imagens/Login sushi.png"media="all">
+<style>
+body{
+ font-family:Arial,Helvética,sans-serif;
+}
+form{
+border:3px solid #111010;
+}
+input[type=text],
+input[type=password]{
+width:100%;
+padding:12px 20px;
+margin: 8px 0;
+display:inline-block;
+border:1px solid rgb(14, 13, 13);
+box-sizing:border-box;
+}
+
+button{
+background-color:#db4a51;
+color:white;
+padding: 14px 20px;
+margin:8px 0;
+border:none;
+cursor:pointer;
+width:100%;
+}
+
+button:hover{
+opacity:0.8;
+}
+
+.cancelbtn{
+width:auto;
+padding:10px 18px;
+background-color:#1b1919;
+}
+
+.imgcontainer{
+text-align:center;
+margin:24px 0 12px 0;
+}
+
+img.avatar{
+width:15%;
+border-radius:auto;
+}
+
+.container{
+padding:16px;
+}
+
+span.psw{
+float:right;
+padding-top:16px;
+}
+@media screen and (max-width:200px){
+
+span.psw{
+display:block;
+float:nome;
+}
+.cancelbtn{
+width:100%;
+}
+}
+</style>
+</head>
+<body style="margin: 20px;">
+    <h2> Bem Vindo </h2>
+    <form action="" method="POST">
+    <div class="imgcontainer">
+        <img src="imagens/Login sushi.png" class="avatar">
+    </div>
+    <div class="container">
+    <label for="nome">
+    <b>Nome do usuário:*</b></label>
+    <input type="text" placeholder="Nome do usuário " name="nome" required>
+
+    <label for="Neo">
+        <b>Senha do usuário:*</b>
+    </label>
+        <input type="password" placeholder="Senha do usuário " name="Neo" required>
+    <button type="submit"> Entrar </button>
+    <label>
+        <input type="checkbox" checked="checked" name="lembrar"> Lembrar sempre
+    </label>
+    </div>
+    <div class="container" 
+    style="background-color:#e6dddd">
+    <button type="button" class="cancelbtn"> Cancelar </button>
+<span class="Neo">
+    <a href="#"> 
+        Esqueceu a senha?</a>
+</span>
+    </div>
+    </form>
+</body>
+</html>
